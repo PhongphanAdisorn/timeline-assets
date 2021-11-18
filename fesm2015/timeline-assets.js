@@ -12,9 +12,6 @@ import { FormControl, Validators, FormsModule, ReactiveFormsModule } from '@angu
 import { MAT_DATE_FORMATS, DateAdapter, MatRippleModule, MatNativeDateModule } from '@angular/material/core';
 import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
-import { IconFiles as IconFiles$1 } from 'projects/timeline-assets/src/lib/common/icon-files';
-import { UserAuthedService as UserAuthedService$1 } from 'projects/timeline-assets/src/lib/services/user-auth.service';
-import { AppTools as AppTools$1, TimelineAssetsService as TimelineAssetsService$1 } from 'projects/timeline-assets/src/lib/timeline-assets.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -892,7 +889,7 @@ class DialogNewRecordComponent {
                 this.readImage(format);
             }
             else {
-                format.thumb = IconFiles$1.iconFile(String(extension).toLowerCase());
+                format.thumb = IconFiles.iconFile(String(extension).toLowerCase());
             }
             filesArr.unshift(format);
         }
@@ -924,7 +921,7 @@ class DialogNewRecordComponent {
     }
     /** View extention */
     getFileIcon(extension) {
-        return IconFiles$1.iconFile(String(extension).toLowerCase());
+        return IconFiles.iconFile(String(extension).toLowerCase());
     }
     /** Delete file item */
     delFile(position) {
@@ -972,7 +969,7 @@ class DialogNewRecordComponent {
         var _a, _b;
         if (this.isSaving)
             return;
-        const tools = new AppTools$1();
+        const tools = new AppTools();
         if (this.modeDialog === 'maintenance') {
             if (this.cost.invalid || this.detail.invalid)
                 return;
@@ -1043,8 +1040,8 @@ DialogNewRecordComponent.ctorParameters = () => [
     { type: DateAdapter },
     { type: MatSnackBar },
     { type: NgZone },
-    { type: TimelineAssetsService$1 },
-    { type: UserAuthedService$1 }
+    { type: TimelineAssetsService },
+    { type: UserAuthedService }
 ];
 
 class DialogViewTaskComponent {

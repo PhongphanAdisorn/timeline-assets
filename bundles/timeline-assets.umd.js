@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/common/http'), require('@angular/core'), require('rxjs/operators'), require('rxjs'), require('@angular/platform-browser'), require('@angular/common'), require('@angular/material/dialog'), require('@angular/forms'), require('@angular/material/core'), require('@angular/animations'), require('@angular/material/snack-bar'), require('projects/timeline-assets/src/lib/common/icon-files'), require('projects/timeline-assets/src/lib/services/user-auth.service'), require('projects/timeline-assets/src/lib/timeline-assets.service'), require('@angular/flex-layout'), require('@angular/material/button'), require('@angular/material/icon'), require('@angular/material/form-field'), require('@angular/material/input'), require('@angular/material/datepicker'), require('@angular/material/list'), require('@angular/material/progress-bar'), require('@angular/material/progress-spinner'), require('projects/timeline-assets/src/lib/directives/directives.module'), require('@angular/material/divider'), require('@angular/material/select'), require('@angular/material/tooltip'), require('@angular/material/chips'), require('@angular/platform-browser/animations')) :
-    typeof define === 'function' && define.amd ? define('timeline-assets', ['exports', '@angular/common/http', '@angular/core', 'rxjs/operators', 'rxjs', '@angular/platform-browser', '@angular/common', '@angular/material/dialog', '@angular/forms', '@angular/material/core', '@angular/animations', '@angular/material/snack-bar', 'projects/timeline-assets/src/lib/common/icon-files', 'projects/timeline-assets/src/lib/services/user-auth.service', 'projects/timeline-assets/src/lib/timeline-assets.service', '@angular/flex-layout', '@angular/material/button', '@angular/material/icon', '@angular/material/form-field', '@angular/material/input', '@angular/material/datepicker', '@angular/material/list', '@angular/material/progress-bar', '@angular/material/progress-spinner', 'projects/timeline-assets/src/lib/directives/directives.module', '@angular/material/divider', '@angular/material/select', '@angular/material/tooltip', '@angular/material/chips', '@angular/platform-browser/animations'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["timeline-assets"] = {}, global.ng.common.http, global.ng.core, global.rxjs.operators, global.rxjs, global.ng.platformBrowser, global.ng.common, global.ng.material.dialog, global.ng.forms, global.ng.material.core, global.ng.animations, global.ng.material.snackBar, global.iconFiles, global.userAuth_service, global.timelineAssets_service, global.ng.flexLayout, global.ng.material.button, global.ng.material.icon, global.ng.material.formField, global.ng.material.input, global.ng.material.datepicker, global.ng.material.list, global.ng.material.progressBar, global.ng.material.progressSpinner, global.directives_module, global.ng.material.divider, global.ng.material.select, global.ng.material.tooltip, global.ng.material.chips, global.ng.platformBrowser.animations));
-})(this, (function (exports, i1, i0, operators, rxjs, platformBrowser, common, dialog, forms, core, animations, snackBar, iconFiles, userAuth_service, timelineAssets_service, flexLayout, button, icon, formField, input, datepicker, list, progressBar, progressSpinner, directives_module, divider, select, tooltip, chips, animations$1) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/common/http'), require('@angular/core'), require('rxjs/operators'), require('rxjs'), require('@angular/platform-browser'), require('@angular/common'), require('@angular/material/dialog'), require('@angular/forms'), require('@angular/material/core'), require('@angular/animations'), require('@angular/material/snack-bar'), require('@angular/flex-layout'), require('@angular/material/button'), require('@angular/material/icon'), require('@angular/material/form-field'), require('@angular/material/input'), require('@angular/material/datepicker'), require('@angular/material/list'), require('@angular/material/progress-bar'), require('@angular/material/progress-spinner'), require('projects/timeline-assets/src/lib/directives/directives.module'), require('@angular/material/divider'), require('@angular/material/select'), require('@angular/material/tooltip'), require('@angular/material/chips'), require('@angular/platform-browser/animations')) :
+    typeof define === 'function' && define.amd ? define('timeline-assets', ['exports', '@angular/common/http', '@angular/core', 'rxjs/operators', 'rxjs', '@angular/platform-browser', '@angular/common', '@angular/material/dialog', '@angular/forms', '@angular/material/core', '@angular/animations', '@angular/material/snack-bar', '@angular/flex-layout', '@angular/material/button', '@angular/material/icon', '@angular/material/form-field', '@angular/material/input', '@angular/material/datepicker', '@angular/material/list', '@angular/material/progress-bar', '@angular/material/progress-spinner', 'projects/timeline-assets/src/lib/directives/directives.module', '@angular/material/divider', '@angular/material/select', '@angular/material/tooltip', '@angular/material/chips', '@angular/platform-browser/animations'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["timeline-assets"] = {}, global.ng.common.http, global.ng.core, global.rxjs.operators, global.rxjs, global.ng.platformBrowser, global.ng.common, global.ng.material.dialog, global.ng.forms, global.ng.material.core, global.ng.animations, global.ng.material.snackBar, global.ng.flexLayout, global.ng.material.button, global.ng.material.icon, global.ng.material.formField, global.ng.material.input, global.ng.material.datepicker, global.ng.material.list, global.ng.material.progressBar, global.ng.material.progressSpinner, global.directives_module, global.ng.material.divider, global.ng.material.select, global.ng.material.tooltip, global.ng.material.chips, global.ng.platformBrowser.animations));
+})(this, (function (exports, i1, i0, operators, rxjs, platformBrowser, common, dialog, forms, core, animations, snackBar, flexLayout, button, icon, formField, input, datepicker, list, progressBar, progressSpinner, directives_module, divider, select, tooltip, chips, animations$1) { 'use strict';
 
     function _interopNamespace(e) {
         if (e && e.__esModule) return e;
@@ -1276,7 +1276,7 @@
                         this.readImage(format);
                     }
                     else {
-                        format.thumb = iconFiles.IconFiles.iconFile(String(extension).toLowerCase());
+                        format.thumb = IconFiles.iconFile(String(extension).toLowerCase());
                     }
                     filesArr.unshift(format);
                 }
@@ -1319,7 +1319,7 @@
         };
         /** View extention */
         DialogNewRecordComponent.prototype.getFileIcon = function (extension) {
-            return iconFiles.IconFiles.iconFile(String(extension).toLowerCase());
+            return IconFiles.iconFile(String(extension).toLowerCase());
         };
         /** Delete file item */
         DialogNewRecordComponent.prototype.delFile = function (position) {
@@ -1369,7 +1369,7 @@
             var _a, _b;
             if (this.isSaving)
                 return;
-            var tools = new timelineAssets_service.AppTools();
+            var tools = new AppTools();
             if (this.modeDialog === 'maintenance') {
                 if (this.cost.invalid || this.detail.invalid)
                     return;
@@ -1456,8 +1456,8 @@
         { type: core.DateAdapter },
         { type: snackBar.MatSnackBar },
         { type: i0.NgZone },
-        { type: timelineAssets_service.TimelineAssetsService },
-        { type: userAuth_service.UserAuthedService }
+        { type: TimelineAssetsService },
+        { type: UserAuthedService }
     ]; };
 
     var DialogViewTaskComponent = /** @class */ (function () {

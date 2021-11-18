@@ -3,8 +3,8 @@ import { FormControl } from '@angular/forms';
 import { DateAdapter } from '@angular/material/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { UserAuthedService } from 'projects/timeline-assets/src/lib/services/user-auth.service';
-import { TimelineAssetsService } from 'projects/timeline-assets/src/lib/timeline-assets.service';
+import { UserAuthedService } from '../../../../services/user-auth.service';
+import { TimelineAssetsService } from '../../../../timeline-assets.service';
 import { Subscription } from 'rxjs';
 interface DialogDataInterface {
     modeDialog: 'maintenance' | 'assets';
