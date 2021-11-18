@@ -4,7 +4,6 @@ import * as i0 from '@angular/core';
 import { Injectable, Component, Input, ChangeDetectorRef, NgZone, Inject, EventEmitter, Output, Directive, NgModule } from '@angular/core';
 import { map, debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { Subscriber, Observable } from 'rxjs';
-import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { MatDialogRef, MAT_DIALOG_DATA, MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { __awaiter } from 'tslib';
@@ -1482,7 +1481,7 @@ TimelineAssetsModule.decorators = [
     { type: NgModule, args: [{
                 declarations: [TimelineAssetsComponent],
                 imports: [
-                    BrowserModule,
+                    // BrowserModule,
                     HttpClientModule,
                     BrowserAnimationsModule,
                     TimelineModule,
