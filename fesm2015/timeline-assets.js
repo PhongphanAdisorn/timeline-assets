@@ -1,7 +1,7 @@
 import * as i1 from '@angular/common/http';
 import { HttpRequest, HttpEventType, HttpResponse, HttpClient, HttpClientModule } from '@angular/common/http';
 import * as i0 from '@angular/core';
-import { Injectable, Component, Input, ChangeDetectorRef, NgZone, Inject, EventEmitter, Output, NgModule, Directive } from '@angular/core';
+import { Injectable, Component, Input, ChangeDetectorRef, NgZone, Inject, EventEmitter, Output, Directive, NgModule } from '@angular/core';
 import { map, debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { Subscriber, Observable } from 'rxjs';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,10 +21,10 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatListModule } from '@angular/material/list';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { DirectivesModule as DirectivesModule$1 } from 'projects/timeline-assets/src/lib/directives/directives.module';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { DirectivesModule as DirectivesModule$1 } from 'projects/timeline-assets/src/lib/directives/directives.module';
 import { MatChipsModule } from '@angular/material/chips';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -1287,77 +1287,6 @@ TimelineToolsComponent.propDecorators = {
     assetType: [{ type: Input }]
 };
 
-class DialogNewRecordModule {
-}
-DialogNewRecordModule.decorators = [
-    { type: NgModule, args: [{
-                declarations: [DialogNewRecordComponent],
-                imports: [
-                    CommonModule,
-                    MatDialogModule,
-                    FormsModule,
-                    ReactiveFormsModule,
-                    MatFormFieldModule,
-                    MatInputModule,
-                    MatButtonModule,
-                    MatIconModule,
-                    FlexLayoutModule,
-                    MatSnackBarModule,
-                    MatDatepickerModule,
-                    MatListModule,
-                    MatProgressBarModule,
-                    MatProgressSpinnerModule,
-                    /** Directives */
-                    DirectivesModule$1
-                ],
-                exports: [DialogNewRecordComponent],
-                providers: []
-            },] }
-];
-
-class TimelineToolsModule {
-}
-TimelineToolsModule.decorators = [
-    { type: NgModule, args: [{
-                declarations: [TimelineToolsComponent],
-                imports: [
-                    CommonModule,
-                    FormsModule,
-                    ReactiveFormsModule,
-                    MatButtonModule,
-                    MatIconModule,
-                    MatDialogModule,
-                    FlexLayoutModule,
-                    MatDividerModule,
-                    MatFormFieldModule,
-                    MatSelectModule,
-                    MatInputModule,
-                    /** Widgets */
-                    DialogNewRecordModule
-                ],
-                exports: [TimelineToolsComponent]
-            },] }
-];
-
-class DialogViewTaskModule {
-}
-DialogViewTaskModule.decorators = [
-    { type: NgModule, args: [{
-                declarations: [DialogViewTaskComponent],
-                imports: [
-                    CommonModule,
-                    MatDialogModule,
-                    FlexLayoutModule,
-                    MatIconModule,
-                    MatButtonModule,
-                    MatTooltipModule,
-                    /** Directives */
-                    DirectivesModule$1
-                ],
-                exports: [DialogViewTaskComponent]
-            },] }
-];
-
 class ErrorImgDirective {
     constructor() {
         this.src = null;
@@ -1421,6 +1350,77 @@ DirectivesModule.decorators = [
                     ErrorImgDirective,
                     ErrorImgUserDirective
                 ]
+            },] }
+];
+
+class DialogNewRecordModule {
+}
+DialogNewRecordModule.decorators = [
+    { type: NgModule, args: [{
+                declarations: [DialogNewRecordComponent],
+                imports: [
+                    CommonModule,
+                    MatDialogModule,
+                    FormsModule,
+                    ReactiveFormsModule,
+                    MatFormFieldModule,
+                    MatInputModule,
+                    MatButtonModule,
+                    MatIconModule,
+                    FlexLayoutModule,
+                    MatSnackBarModule,
+                    MatDatepickerModule,
+                    MatListModule,
+                    MatProgressBarModule,
+                    MatProgressSpinnerModule,
+                    /** Directives */
+                    DirectivesModule
+                ],
+                exports: [DialogNewRecordComponent],
+                providers: []
+            },] }
+];
+
+class TimelineToolsModule {
+}
+TimelineToolsModule.decorators = [
+    { type: NgModule, args: [{
+                declarations: [TimelineToolsComponent],
+                imports: [
+                    CommonModule,
+                    FormsModule,
+                    ReactiveFormsModule,
+                    MatButtonModule,
+                    MatIconModule,
+                    MatDialogModule,
+                    FlexLayoutModule,
+                    MatDividerModule,
+                    MatFormFieldModule,
+                    MatSelectModule,
+                    MatInputModule,
+                    /** Widgets */
+                    DialogNewRecordModule
+                ],
+                exports: [TimelineToolsComponent]
+            },] }
+];
+
+class DialogViewTaskModule {
+}
+DialogViewTaskModule.decorators = [
+    { type: NgModule, args: [{
+                declarations: [DialogViewTaskComponent],
+                imports: [
+                    CommonModule,
+                    MatDialogModule,
+                    FlexLayoutModule,
+                    MatIconModule,
+                    MatButtonModule,
+                    MatTooltipModule,
+                    /** Directives */
+                    DirectivesModule$1
+                ],
+                exports: [DialogViewTaskComponent]
             },] }
 ];
 
@@ -1506,5 +1506,5 @@ TimelineAssetsModule.decorators = [
  * Generated bundle index. Do not edit.
  */
 
-export { AppTools, BudgetCodeService, TimelineAssetsComponent, TimelineAssetsModule, TimelineAssetsService, UserAuthedService as ɵa, TimelineModule as ɵb, TimelineComponent as ɵc, TimelineToolsModule as ɵd, TimelineToolsComponent as ɵe, DialogNewRecordModule as ɵf, DialogNewRecordComponent as ɵg, FadeInOut as ɵh, FadeInGrow as ɵi, DialogViewTaskModule as ɵj, DialogViewTaskComponent as ɵk, AddBudgetCodeMaintenanceModule as ɵl, AddBudgetCodeMaintenanceComponent as ɵm, FadeInOut$1 as ɵn, FadeInGrow$1 as ɵo, DirectivesModule as ɵp, ErrorImgDirective as ɵq, ErrorImgUserDirective as ɵr };
+export { AppTools, BudgetCodeService, TimelineAssetsComponent, TimelineAssetsModule, TimelineAssetsService, UserAuthedService as ɵa, TimelineModule as ɵb, TimelineComponent as ɵc, TimelineToolsModule as ɵd, TimelineToolsComponent as ɵe, DialogNewRecordModule as ɵf, DialogNewRecordComponent as ɵg, FadeInOut as ɵh, FadeInGrow as ɵi, DirectivesModule as ɵj, ErrorImgDirective as ɵk, ErrorImgUserDirective as ɵl, DialogViewTaskModule as ɵm, DialogViewTaskComponent as ɵn, AddBudgetCodeMaintenanceModule as ɵo, AddBudgetCodeMaintenanceComponent as ɵp, FadeInOut$1 as ɵq, FadeInGrow$1 as ɵr };
 //# sourceMappingURL=timeline-assets.js.map

@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/common/http'), require('@angular/core'), require('rxjs/operators'), require('rxjs'), require('@angular/platform-browser'), require('@angular/common'), require('@angular/material/dialog'), require('@angular/forms'), require('@angular/material/core'), require('@angular/animations'), require('@angular/material/snack-bar'), require('@angular/flex-layout'), require('@angular/material/button'), require('@angular/material/icon'), require('@angular/material/form-field'), require('@angular/material/input'), require('@angular/material/datepicker'), require('@angular/material/list'), require('@angular/material/progress-bar'), require('@angular/material/progress-spinner'), require('projects/timeline-assets/src/lib/directives/directives.module'), require('@angular/material/divider'), require('@angular/material/select'), require('@angular/material/tooltip'), require('@angular/material/chips'), require('@angular/platform-browser/animations')) :
-    typeof define === 'function' && define.amd ? define('timeline-assets', ['exports', '@angular/common/http', '@angular/core', 'rxjs/operators', 'rxjs', '@angular/platform-browser', '@angular/common', '@angular/material/dialog', '@angular/forms', '@angular/material/core', '@angular/animations', '@angular/material/snack-bar', '@angular/flex-layout', '@angular/material/button', '@angular/material/icon', '@angular/material/form-field', '@angular/material/input', '@angular/material/datepicker', '@angular/material/list', '@angular/material/progress-bar', '@angular/material/progress-spinner', 'projects/timeline-assets/src/lib/directives/directives.module', '@angular/material/divider', '@angular/material/select', '@angular/material/tooltip', '@angular/material/chips', '@angular/platform-browser/animations'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["timeline-assets"] = {}, global.ng.common.http, global.ng.core, global.rxjs.operators, global.rxjs, global.ng.platformBrowser, global.ng.common, global.ng.material.dialog, global.ng.forms, global.ng.material.core, global.ng.animations, global.ng.material.snackBar, global.ng.flexLayout, global.ng.material.button, global.ng.material.icon, global.ng.material.formField, global.ng.material.input, global.ng.material.datepicker, global.ng.material.list, global.ng.material.progressBar, global.ng.material.progressSpinner, global.directives_module, global.ng.material.divider, global.ng.material.select, global.ng.material.tooltip, global.ng.material.chips, global.ng.platformBrowser.animations));
-})(this, (function (exports, i1, i0, operators, rxjs, platformBrowser, common, dialog, forms, core, animations, snackBar, flexLayout, button, icon, formField, input, datepicker, list, progressBar, progressSpinner, directives_module, divider, select, tooltip, chips, animations$1) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/common/http'), require('@angular/core'), require('rxjs/operators'), require('rxjs'), require('@angular/platform-browser'), require('@angular/common'), require('@angular/material/dialog'), require('@angular/forms'), require('@angular/material/core'), require('@angular/animations'), require('@angular/material/snack-bar'), require('@angular/flex-layout'), require('@angular/material/button'), require('@angular/material/icon'), require('@angular/material/form-field'), require('@angular/material/input'), require('@angular/material/datepicker'), require('@angular/material/list'), require('@angular/material/progress-bar'), require('@angular/material/progress-spinner'), require('@angular/material/divider'), require('@angular/material/select'), require('@angular/material/tooltip'), require('projects/timeline-assets/src/lib/directives/directives.module'), require('@angular/material/chips'), require('@angular/platform-browser/animations')) :
+    typeof define === 'function' && define.amd ? define('timeline-assets', ['exports', '@angular/common/http', '@angular/core', 'rxjs/operators', 'rxjs', '@angular/platform-browser', '@angular/common', '@angular/material/dialog', '@angular/forms', '@angular/material/core', '@angular/animations', '@angular/material/snack-bar', '@angular/flex-layout', '@angular/material/button', '@angular/material/icon', '@angular/material/form-field', '@angular/material/input', '@angular/material/datepicker', '@angular/material/list', '@angular/material/progress-bar', '@angular/material/progress-spinner', '@angular/material/divider', '@angular/material/select', '@angular/material/tooltip', 'projects/timeline-assets/src/lib/directives/directives.module', '@angular/material/chips', '@angular/platform-browser/animations'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["timeline-assets"] = {}, global.ng.common.http, global.ng.core, global.rxjs.operators, global.rxjs, global.ng.platformBrowser, global.ng.common, global.ng.material.dialog, global.ng.forms, global.ng.material.core, global.ng.animations, global.ng.material.snackBar, global.ng.flexLayout, global.ng.material.button, global.ng.material.icon, global.ng.material.formField, global.ng.material.input, global.ng.material.datepicker, global.ng.material.list, global.ng.material.progressBar, global.ng.material.progressSpinner, global.ng.material.divider, global.ng.material.select, global.ng.material.tooltip, global.directives_module, global.ng.material.chips, global.ng.platformBrowser.animations));
+})(this, (function (exports, i1, i0, operators, rxjs, platformBrowser, common, dialog, forms, core, animations, snackBar, flexLayout, button, icon, formField, input, datepicker, list, progressBar, progressSpinner, divider, select, tooltip, directives_module, chips, animations$1) { 'use strict';
 
     function _interopNamespace(e) {
         if (e && e.__esModule) return e;
@@ -1725,86 +1725,6 @@
         assetType: [{ type: i0.Input }]
     };
 
-    var DialogNewRecordModule = /** @class */ (function () {
-        function DialogNewRecordModule() {
-        }
-        return DialogNewRecordModule;
-    }());
-    DialogNewRecordModule.decorators = [
-        { type: i0.NgModule, args: [{
-                    declarations: [DialogNewRecordComponent],
-                    imports: [
-                        common.CommonModule,
-                        dialog.MatDialogModule,
-                        forms.FormsModule,
-                        forms.ReactiveFormsModule,
-                        formField.MatFormFieldModule,
-                        input.MatInputModule,
-                        button.MatButtonModule,
-                        icon.MatIconModule,
-                        flexLayout.FlexLayoutModule,
-                        snackBar.MatSnackBarModule,
-                        datepicker.MatDatepickerModule,
-                        list.MatListModule,
-                        progressBar.MatProgressBarModule,
-                        progressSpinner.MatProgressSpinnerModule,
-                        /** Directives */
-                        directives_module.DirectivesModule
-                    ],
-                    exports: [DialogNewRecordComponent],
-                    providers: []
-                },] }
-    ];
-
-    var TimelineToolsModule = /** @class */ (function () {
-        function TimelineToolsModule() {
-        }
-        return TimelineToolsModule;
-    }());
-    TimelineToolsModule.decorators = [
-        { type: i0.NgModule, args: [{
-                    declarations: [TimelineToolsComponent],
-                    imports: [
-                        common.CommonModule,
-                        forms.FormsModule,
-                        forms.ReactiveFormsModule,
-                        button.MatButtonModule,
-                        icon.MatIconModule,
-                        dialog.MatDialogModule,
-                        flexLayout.FlexLayoutModule,
-                        divider.MatDividerModule,
-                        formField.MatFormFieldModule,
-                        select.MatSelectModule,
-                        input.MatInputModule,
-                        /** Widgets */
-                        DialogNewRecordModule
-                    ],
-                    exports: [TimelineToolsComponent]
-                },] }
-    ];
-
-    var DialogViewTaskModule = /** @class */ (function () {
-        function DialogViewTaskModule() {
-        }
-        return DialogViewTaskModule;
-    }());
-    DialogViewTaskModule.decorators = [
-        { type: i0.NgModule, args: [{
-                    declarations: [DialogViewTaskComponent],
-                    imports: [
-                        common.CommonModule,
-                        dialog.MatDialogModule,
-                        flexLayout.FlexLayoutModule,
-                        icon.MatIconModule,
-                        button.MatButtonModule,
-                        tooltip.MatTooltipModule,
-                        /** Directives */
-                        directives_module.DirectivesModule
-                    ],
-                    exports: [DialogViewTaskComponent]
-                },] }
-    ];
-
     var ErrorImgDirective = /** @class */ (function () {
         function ErrorImgDirective() {
             this.src = null;
@@ -1873,6 +1793,86 @@
                         ErrorImgDirective,
                         ErrorImgUserDirective
                     ]
+                },] }
+    ];
+
+    var DialogNewRecordModule = /** @class */ (function () {
+        function DialogNewRecordModule() {
+        }
+        return DialogNewRecordModule;
+    }());
+    DialogNewRecordModule.decorators = [
+        { type: i0.NgModule, args: [{
+                    declarations: [DialogNewRecordComponent],
+                    imports: [
+                        common.CommonModule,
+                        dialog.MatDialogModule,
+                        forms.FormsModule,
+                        forms.ReactiveFormsModule,
+                        formField.MatFormFieldModule,
+                        input.MatInputModule,
+                        button.MatButtonModule,
+                        icon.MatIconModule,
+                        flexLayout.FlexLayoutModule,
+                        snackBar.MatSnackBarModule,
+                        datepicker.MatDatepickerModule,
+                        list.MatListModule,
+                        progressBar.MatProgressBarModule,
+                        progressSpinner.MatProgressSpinnerModule,
+                        /** Directives */
+                        DirectivesModule
+                    ],
+                    exports: [DialogNewRecordComponent],
+                    providers: []
+                },] }
+    ];
+
+    var TimelineToolsModule = /** @class */ (function () {
+        function TimelineToolsModule() {
+        }
+        return TimelineToolsModule;
+    }());
+    TimelineToolsModule.decorators = [
+        { type: i0.NgModule, args: [{
+                    declarations: [TimelineToolsComponent],
+                    imports: [
+                        common.CommonModule,
+                        forms.FormsModule,
+                        forms.ReactiveFormsModule,
+                        button.MatButtonModule,
+                        icon.MatIconModule,
+                        dialog.MatDialogModule,
+                        flexLayout.FlexLayoutModule,
+                        divider.MatDividerModule,
+                        formField.MatFormFieldModule,
+                        select.MatSelectModule,
+                        input.MatInputModule,
+                        /** Widgets */
+                        DialogNewRecordModule
+                    ],
+                    exports: [TimelineToolsComponent]
+                },] }
+    ];
+
+    var DialogViewTaskModule = /** @class */ (function () {
+        function DialogViewTaskModule() {
+        }
+        return DialogViewTaskModule;
+    }());
+    DialogViewTaskModule.decorators = [
+        { type: i0.NgModule, args: [{
+                    declarations: [DialogViewTaskComponent],
+                    imports: [
+                        common.CommonModule,
+                        dialog.MatDialogModule,
+                        flexLayout.FlexLayoutModule,
+                        icon.MatIconModule,
+                        button.MatButtonModule,
+                        tooltip.MatTooltipModule,
+                        /** Directives */
+                        directives_module.DirectivesModule
+                    ],
+                    exports: [DialogViewTaskComponent]
                 },] }
     ];
 
@@ -1981,15 +1981,15 @@
     exports["ɵg"] = DialogNewRecordComponent;
     exports["ɵh"] = FadeInOut;
     exports["ɵi"] = FadeInGrow;
-    exports["ɵj"] = DialogViewTaskModule;
-    exports["ɵk"] = DialogViewTaskComponent;
-    exports["ɵl"] = AddBudgetCodeMaintenanceModule;
-    exports["ɵm"] = AddBudgetCodeMaintenanceComponent;
-    exports["ɵn"] = FadeInOut$1;
-    exports["ɵo"] = FadeInGrow$1;
-    exports["ɵp"] = DirectivesModule;
-    exports["ɵq"] = ErrorImgDirective;
-    exports["ɵr"] = ErrorImgUserDirective;
+    exports["ɵj"] = DirectivesModule;
+    exports["ɵk"] = ErrorImgDirective;
+    exports["ɵl"] = ErrorImgUserDirective;
+    exports["ɵm"] = DialogViewTaskModule;
+    exports["ɵn"] = DialogViewTaskComponent;
+    exports["ɵo"] = AddBudgetCodeMaintenanceModule;
+    exports["ɵp"] = AddBudgetCodeMaintenanceComponent;
+    exports["ɵq"] = FadeInOut$1;
+    exports["ɵr"] = FadeInGrow$1;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
