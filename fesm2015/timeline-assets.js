@@ -24,7 +24,6 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { DirectivesModule as DirectivesModule$1 } from 'projects/timeline-assets/src/lib/directives/directives.module';
 import { MatChipsModule } from '@angular/material/chips';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -1418,7 +1417,7 @@ DialogViewTaskModule.decorators = [
                     MatButtonModule,
                     MatTooltipModule,
                     /** Directives */
-                    DirectivesModule$1
+                    DirectivesModule
                 ],
                 exports: [DialogViewTaskComponent]
             },] }
