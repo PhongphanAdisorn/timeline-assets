@@ -1,0 +1,25 @@
+{
+  "name": "timeline-assets",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^11.1.1",
+    "@angular/core": "^11.1.1",
+    "@angular/flex-layout": "^12.0.0-beta.35",
+    "@angular/material": "^11.2.6",
+    "@angular/animations": "^11.2.7",
+    "@angular/cdk": "^11.2.6",
+    "@angular/platform-browser": "~11.1.1",
+    "@angular/platform-browser-dynamic": "~11.1.1"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "main": "bundles/timeline-assets.umd.js",
+  "module": "fesm2015/timeline-assets.js",
+  "es2015": "fesm2015/timeline-assets.js",
+  "esm2015": "esm2015/timeline-assets.js",
+  "fesm2015": "fesm2015/timeline-assets.js",
+  "typings": "timeline-assets.d.ts",
+  "metadata": "timeline-assets.metadata.json",
+  "sideEffects": false
+}
