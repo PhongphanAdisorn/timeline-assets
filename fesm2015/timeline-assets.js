@@ -314,7 +314,7 @@ class TimelineAssetsComponent {
 TimelineAssetsComponent.decorators = [
     { type: Component, args: [{
                 selector: 'lib-timeline-assets',
-                template: "<div class=\"timeline-assets\">\r\n    <app-timeline [assetInfo]=\"_assetInfo\" [triggerNum]=\"_triggerNumber\"></app-timeline>\r\n</div>",
+                template: "<div class=\"timeline-assets\" [style.height.%]=\"100\" [style.width.%]=\"100\">\r\n    <app-timeline [assetInfo]=\"_assetInfo\" [triggerNum]=\"_triggerNumber\" [style.height.%]=\"100\" [style.width.%]=\"100\"></app-timeline>\r\n</div>",
                 styles: [""]
             },] }
 ];
