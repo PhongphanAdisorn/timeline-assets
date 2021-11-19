@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/common/http'), require('@angular/core'), require('rxjs/operators'), require('rxjs'), require('@angular/common'), require('@angular/material/dialog'), require('@angular/forms'), require('@angular/material/core'), require('@angular/animations'), require('@angular/material/snack-bar'), require('@angular/flex-layout'), require('@angular/material/button'), require('@angular/material/icon'), require('@angular/material/form-field'), require('@angular/material/input'), require('@angular/material/datepicker'), require('@angular/material/list'), require('@angular/material/progress-bar'), require('@angular/material/progress-spinner'), require('@angular/material/divider'), require('@angular/material/select'), require('@angular/material/tooltip'), require('@angular/material/chips'), require('@angular/platform-browser/animations')) :
-    typeof define === 'function' && define.amd ? define('timeline-assets', ['exports', '@angular/common/http', '@angular/core', 'rxjs/operators', 'rxjs', '@angular/common', '@angular/material/dialog', '@angular/forms', '@angular/material/core', '@angular/animations', '@angular/material/snack-bar', '@angular/flex-layout', '@angular/material/button', '@angular/material/icon', '@angular/material/form-field', '@angular/material/input', '@angular/material/datepicker', '@angular/material/list', '@angular/material/progress-bar', '@angular/material/progress-spinner', '@angular/material/divider', '@angular/material/select', '@angular/material/tooltip', '@angular/material/chips', '@angular/platform-browser/animations'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["timeline-assets"] = {}, global.ng.common.http, global.ng.core, global.rxjs.operators, global.rxjs, global.ng.common, global.ng.material.dialog, global.ng.forms, global.ng.material.core, global.ng.animations, global.ng.material.snackBar, global.ng.flexLayout, global.ng.material.button, global.ng.material.icon, global.ng.material.formField, global.ng.material.input, global.ng.material.datepicker, global.ng.material.list, global.ng.material.progressBar, global.ng.material.progressSpinner, global.ng.material.divider, global.ng.material.select, global.ng.material.tooltip, global.ng.material.chips, global.ng.platformBrowser.animations));
-})(this, (function (exports, i1, i0, operators, rxjs, common, dialog, forms, core, animations, snackBar, flexLayout, button, icon, formField, input, datepicker, list, progressBar, progressSpinner, divider, select, tooltip, chips, animations$1) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/common/http'), require('@angular/core'), require('rxjs/operators'), require('rxjs'), require('@angular/platform-browser'), require('@angular/common'), require('@angular/material/dialog'), require('@angular/forms'), require('@angular/material/core'), require('@angular/animations'), require('@angular/material/snack-bar'), require('@angular/flex-layout'), require('@angular/material/button'), require('@angular/material/icon'), require('@angular/material/form-field'), require('@angular/material/input'), require('@angular/material/datepicker'), require('@angular/material/list'), require('@angular/material/progress-bar'), require('@angular/material/progress-spinner'), require('@angular/material/divider'), require('@angular/material/select'), require('@angular/material/tooltip'), require('@angular/material/chips'), require('@angular/platform-browser/animations')) :
+    typeof define === 'function' && define.amd ? define('timeline-assets', ['exports', '@angular/common/http', '@angular/core', 'rxjs/operators', 'rxjs', '@angular/platform-browser', '@angular/common', '@angular/material/dialog', '@angular/forms', '@angular/material/core', '@angular/animations', '@angular/material/snack-bar', '@angular/flex-layout', '@angular/material/button', '@angular/material/icon', '@angular/material/form-field', '@angular/material/input', '@angular/material/datepicker', '@angular/material/list', '@angular/material/progress-bar', '@angular/material/progress-spinner', '@angular/material/divider', '@angular/material/select', '@angular/material/tooltip', '@angular/material/chips', '@angular/platform-browser/animations'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["timeline-assets"] = {}, global.ng.common.http, global.ng.core, global.rxjs.operators, global.rxjs, global.ng.platformBrowser, global.ng.common, global.ng.material.dialog, global.ng.forms, global.ng.material.core, global.ng.animations, global.ng.material.snackBar, global.ng.flexLayout, global.ng.material.button, global.ng.material.icon, global.ng.material.formField, global.ng.material.input, global.ng.material.datepicker, global.ng.material.list, global.ng.material.progressBar, global.ng.material.progressSpinner, global.ng.material.divider, global.ng.material.select, global.ng.material.tooltip, global.ng.material.chips, global.ng.platformBrowser.animations));
+})(this, (function (exports, i1, i0, operators, rxjs, platformBrowser, common, dialog, forms, core, animations, snackBar, flexLayout, button, icon, formField, input, datepicker, list, progressBar, progressSpinner, divider, select, tooltip, chips, animations$1) { 'use strict';
 
     function _interopNamespace(e) {
         if (e && e.__esModule) return e;
@@ -312,6 +312,7 @@
         Object.defineProperty(TimelineAssetsComponent.prototype, "AssetInfo", {
             set: function (items) {
                 this._assetInfo = items;
+                // this._assetInfo = this.dataTest;
             },
             enumerable: false,
             configurable: true
@@ -1503,8 +1504,11 @@
         };
         Object.defineProperty(TimelineComponent.prototype, "assetInfo", {
             set: function (info) {
-                this._assetId = info === null || info === void 0 ? void 0 : info.id;
-                this._assetType = info === null || info === void 0 ? void 0 : info.table;
+                // this._assetId = info?.id;
+                // this._assetType = info?.table;
+                // private dataTest: any = {table: 'c02_footpath_type', id: '3198'}
+                this._assetId = (info === null || info === void 0 ? void 0 : info.id) ? info === null || info === void 0 ? void 0 : info.id : 3198;
+                this._assetType = (info === null || info === void 0 ? void 0 : info.table) ? info === null || info === void 0 ? void 0 : info.table : 'c02_footpath_type';
                 this._assetCaption = info === null || info === void 0 ? void 0 : info.caption;
                 // console.log('Asset-Info:', info);
                 if ((info === null || info === void 0 ? void 0 : info.id) && (info === null || info === void 0 ? void 0 : info.table))
@@ -1944,7 +1948,7 @@
         { type: i0.NgModule, args: [{
                     declarations: [TimelineAssetsComponent],
                     imports: [
-                        // BrowserModule,
+                        platformBrowser.BrowserModule,
                         common.CommonModule,
                         i1.HttpClientModule,
                         animations$1.BrowserAnimationsModule,

@@ -4,6 +4,7 @@ import * as i0 from '@angular/core';
 import { Injectable, Component, Input, ChangeDetectorRef, NgZone, Inject, EventEmitter, Output, Directive, NgModule } from '@angular/core';
 import { map, debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { Subscriber, Observable } from 'rxjs';
+import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { MatDialogRef, MAT_DIALOG_DATA, MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { __awaiter } from 'tslib';
@@ -299,6 +300,7 @@ class TimelineAssetsComponent {
     }
     set AssetInfo(items) {
         this._assetInfo = items;
+        // this._assetInfo = this.dataTest;
     }
     set TriggerNumber(num) {
         if (num)
@@ -1083,8 +1085,11 @@ class TimelineComponent {
         this.loadData(this._timelinePeriod, this._timelinePeriodType);
     }
     set assetInfo(info) {
-        this._assetId = info === null || info === void 0 ? void 0 : info.id;
-        this._assetType = info === null || info === void 0 ? void 0 : info.table;
+        // this._assetId = info?.id;
+        // this._assetType = info?.table;
+        // private dataTest: any = {table: 'c02_footpath_type', id: '3198'}
+        this._assetId = (info === null || info === void 0 ? void 0 : info.id) ? info === null || info === void 0 ? void 0 : info.id : 3198;
+        this._assetType = (info === null || info === void 0 ? void 0 : info.table) ? info === null || info === void 0 ? void 0 : info.table : 'c02_footpath_type';
         this._assetCaption = info === null || info === void 0 ? void 0 : info.caption;
         // console.log('Asset-Info:', info);
         if ((info === null || info === void 0 ? void 0 : info.id) && (info === null || info === void 0 ? void 0 : info.table))
@@ -1481,7 +1486,7 @@ TimelineAssetsModule.decorators = [
     { type: NgModule, args: [{
                 declarations: [TimelineAssetsComponent],
                 imports: [
-                    // BrowserModule,
+                    BrowserModule,
                     CommonModule,
                     HttpClientModule,
                     BrowserAnimationsModule,
