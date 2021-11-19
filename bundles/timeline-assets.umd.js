@@ -1945,6 +1945,7 @@
                     declarations: [TimelineAssetsComponent],
                     imports: [
                         // BrowserModule,
+                        common.CommonModule,
                         i1.HttpClientModule,
                         animations$1.BrowserAnimationsModule,
                         TimelineModule,

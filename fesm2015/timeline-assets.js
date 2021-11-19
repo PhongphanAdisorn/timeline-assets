@@ -1482,6 +1482,7 @@ TimelineAssetsModule.decorators = [
                 declarations: [TimelineAssetsComponent],
                 imports: [
                     // BrowserModule,
+                    CommonModule,
                     HttpClientModule,
                     BrowserAnimationsModule,
                     TimelineModule,
