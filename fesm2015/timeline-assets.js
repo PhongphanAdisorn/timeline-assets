@@ -4,7 +4,6 @@ import * as i0 from '@angular/core';
 import { Injectable, Component, Input, ChangeDetectorRef, NgZone, Inject, EventEmitter, Output, Directive, NgModule } from '@angular/core';
 import { map, debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { Subscriber, Observable } from 'rxjs';
-import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { MatDialogRef, MAT_DIALOG_DATA, MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { __awaiter } from 'tslib';
@@ -25,7 +24,6 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatChipsModule } from '@angular/material/chips';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const BaseServer = "https://highwaydistrict.com/doh_district/api";
 class TimelineAssetsService {
@@ -1486,10 +1484,8 @@ TimelineAssetsModule.decorators = [
     { type: NgModule, args: [{
                 declarations: [TimelineAssetsComponent],
                 imports: [
-                    BrowserModule,
                     CommonModule,
                     HttpClientModule,
-                    BrowserAnimationsModule,
                     TimelineModule,
                     FormsModule,
                     ReactiveFormsModule,
